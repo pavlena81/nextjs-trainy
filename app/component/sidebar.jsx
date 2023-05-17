@@ -6,11 +6,20 @@ import {Envelope, Linkedin} from  './icons/'
 const Sidebar = ({ data}) => {
     const {name, role, education, contactLinks} = data;
     return (
-        <div>sidebar
-            <Image />
-            <h1>{name}</h1>
-            <h2>{role}</h2>
-            <p>{education}</p>
+        <div className='bg-black flex flex-col h-screen w-full content-between sm:justify-around sm:w-1/3 sm:fixed'>sidebar
+            <div className='text-white flex flex-col p-10 items-senter'>
+                <Image
+                    priority
+					width={300}
+					height={300}
+                    className='bg-white rounded-full h-full mb-6'
+                    src=''
+                    alt=''
+                aria-label=''/>
+                <h1>{name}</h1>
+                <h2>{role}</h2>
+                <p>{education}</p>
+            
             <div>
                 <h3>CONTACT ME</h3>
                 <a href={contactLinks?.[0]} aria-label={'email link'}>
@@ -19,7 +28,10 @@ const Sidebar = ({ data}) => {
                 <a href={contactLinks?.[2]} aria-label={'linkedin link'}>
                     <Linkedin/>
                 </a>
-            </div>
+                {/* <a href={contactLinks?.[3]} aria-label={'github link'}>
+                    <Github/>
+                </a> */}
+            </div></div>
         </div>
     )
 }
