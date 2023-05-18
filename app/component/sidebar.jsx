@@ -12,9 +12,9 @@ const Sidebar = ({ data}) => {
                     priority
 					width={300}
 					height={300}
-                    className='bg-white rounded-full h-full mb-6'
-                    src=''
-                    alt=''
+                    className='rounded-full  mb-6'
+                    src='/images/PhotoToProj.jpg'
+                    alt='Olena Nesteruk photo'
                 aria-label=''/>
                 <h1>{name}</h1>
                 <h2>{role}</h2>
