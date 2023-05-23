@@ -5,12 +5,16 @@
 @tailwind components;
 @tailwind utilities; */
 
+
 @layer base {
-    .h1 {
+    h1 {
         @apply text-yellow text-4xl sm: text-6xl;
     }
 
-   
+    p {
+		@apply text-base;
+	}
+    
     html {
         font-family: Merriweather;
     }

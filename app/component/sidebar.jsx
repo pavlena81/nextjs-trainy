@@ -12,16 +12,18 @@ const Sidebar = ({ data}) => {
                     priority
 					width={300}
 					height={300}
-                    className='rounded-full  mb-6'
+                    className='rounded-full h-full mb-6'
                     src='/images/PhotoToProj.jpg'
-                    alt='Olena Nesteruk photo'
-                aria-label=''/>
-                <h1>{name}</h1>
-                <h2>{role}</h2>
-                <p>{education}</p>
+                    alt='Picture of the author'
+                    aria-label='Picture of the author'/>
+                <h1 className='text-yellow text-4xl sm: text-6xl mb-2'>{name}</h1>
+                <h2 className='text-2xl mb-8'>{role}</h2>
+                <p className='mb-8'>{education[0]}</p>
+                <p className='mb-2'>{education[1]}</p>
             
             <div>
                 <h3>CONTACT ME</h3>
+                
                 <a href={contactLinks?.[0]} aria-label={'email link'}>
                     <Envelope/>
                 </a>
