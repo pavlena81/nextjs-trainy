@@ -6,7 +6,7 @@ import {Envelope, Linkedin} from  './icons/'
 const Sidebar = ({ data}) => {
     const {name, role, education, contactLinks} = data;
     return (
-        <div className='bg-black flex flex-col h-screen w-full content-between sm:justify-around sm:w-1/3 sm:fixed'>
+        <div className='bg-black flex flex-col h-auto sm:h-screen w-full content-between sm:justify-around sm:w-1/3 sm:fixed'>
             <div className='text-white text-center flex flex-col p-10 items-center'>
                 <Image
                     priority
